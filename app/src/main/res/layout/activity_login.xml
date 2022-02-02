@@ -1,0 +1,69 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:gravity="center_horizontal"
+tools:context=".Login">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:textSize="50dp"
+    android:gravity="center_horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inserisci nome utente e password\n o crea un nuovo account"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:hint="username"
+    android:id="@+id/username"
+    />
+<EditText
+
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:hint="password"
+    android:id="@+id/password"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Accedi"
+    android:id="@+id/conferma"
+    android:backgroundTint="@color/blue"
+    />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+<TextView
+    android:gravity="center_horizontal"
+    android:textSize="15dp"
+    android:text="Non hai un account? Registrati"
+    android:layout_width="match_parent"
+    android:textColor="@color/blue"
+    android:layout_height="wrap_content"
+    android:id="@+id/registrati"
+    />
+
+</LinearLayout>
